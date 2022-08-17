@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "project": {
+    "name": "Ryan-Hatamosa-Website-v2"
+  },
+  "api": {
+    "projectId": "p9ck4cnh",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
