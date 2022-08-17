@@ -1,0 +1,120 @@
+.app__footer {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.app__footer-cards {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  margin: 4rem 2rem 2rem;
+
+  .app__footer-card {
+    min-width: 310px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #e07a5f;
+    color: #f4f1de !important;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+    }
+
+    .phone-img {
+      margin-right: 70px;
+    }
+
+    .phone-num {
+      margin-right: 80px;
+    }
+
+    p {
+      display: flex;
+      font-weight: 600;
+    }
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.app__footer-cards .app__footer-card:last-child {
+  background-color: #e07a5f;
+  color: #3d405b;
+}
+
+.app__footer-form {
+  width: 60%;
+  flex-direction: column;
+  margin: 1rem 2rem;
+
+  div {
+    width: 100%;
+
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #f4f1de;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 7px;
+      background-color: #f4f1de;
+
+      font-family: var(--font-base);
+      // color: #fffffe;
+      outline: none;
+    }
+
+    textarea {
+      height: 170px;
+    }
+  }
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #f2cc8f;
+
+    font-weight: 500;
+    text-align: center;
+    color: var(--white-color);
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-family: var(--font-base);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .button-sent {
+    cursor: default;
+  }
+}

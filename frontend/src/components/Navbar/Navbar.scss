@@ -1,0 +1,155 @@
+.app__navbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+
+  background: #f4f1de;
+  position: fixed;
+  z-index: 50;
+  @media screen and (max-width: 1200px) {
+  }
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 3;
+  padding: 0 7rem;
+
+  .name-logo {
+    color: #00473e;
+    font-weight: 800;
+    text-transform: lowercase;
+    font-size: 40px;
+    text-align: right;
+    margin: 5rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 0 2vw;
+  }
+}
+
+.title {
+  font-weight: 600;
+  color: #181818;
+  white-space: nowrap;
+}
+
+.role {
+  color: #2e2e2e;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.app__navbar-links {
+  padding-left: 28vw;
+  right: 30px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3d405b;
+  list-style: none;
+
+  li {
+    margin: 0 1rem;
+    cursor: pointer;
+
+    flex-direction: column;
+
+    div {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 50%;
+    }
+
+    a {
+      color: #3d405b;
+      text-decoration: none;
+      flex-direction: column;
+
+      text-transform: lowercase;
+      font-weight: 100;
+      font-size: 20px;
+      padding: 0 0.5vw;
+
+      &:hover {
+        color: #181818;
+      }
+    }
+
+    &:hover {
+      div {
+        background: #181818;
+      }
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+  @media screen and (min-width: 2400px) {
+    padding-left: 0;
+    padding-right: 20rem;
+  }
+}
+
+.app__navbar-menu {
+  position: fixed;
+  top: 0;
+  right: -3rem;
+  bottom: 0;
+  width: 60%;
+  height: 100vh;
+  z-index: 10;
+  box-shadow: 3px 10px 50px 2px rgba(0, 0, 0, 0.9);
+  background-color: #f4f1de;
+
+  .inner-nav {
+    padding-top: 50px;
+
+    a {
+      color: #3d405b;
+      font-size: 2.9rem;
+      font-weight: 300;
+      display: block;
+      padding-left: 35px;
+      margin: 20px;
+      text-decoration: none;
+      
+      @media screen and (max-width: 1200px) {
+        font-size: 2.5rem;
+      }
+      @media screen and (max-width: 900px) {
+        font-size: 2rem;
+      }
+      
+      &:hover {
+        color: #3d405b;
+      }
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+    width: 85%;
+  }
+
+
+}
+
+.toggle-button {
+  z-index: 101;
+
+  @media screen and (min-width: 1300px) {
+    display: none;
+  }
+}
